@@ -1,6 +1,7 @@
 build/
-*/.vscode/
+cmake-build-debug-gccgpp/
+.idea/
 
 *.DS_Store
 *.out
-
+CMakeLists.txt
