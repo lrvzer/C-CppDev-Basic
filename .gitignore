@@ -4,4 +4,3 @@ cmake-build-debug-gccgpp/
 
 *.DS_Store
 *.out
-CMakeLists.txt
