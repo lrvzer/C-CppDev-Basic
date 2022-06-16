@@ -16,7 +16,6 @@ add_executable(VectorMemoryManage4 Vector/VectorMemoryManage4.cpp)
 add_executable(VectorInvalidIterator Vector/VectorInvalidIterator.cpp)
 add_executable(VectorMultiSpace Vector/VectorMultiSpace.cpp)
 
-
 # List
 add_executable(ListInit List/ListIntroduce.cpp)
 add_executable(ListConstructor List/ListConstructor.cpp)
@@ -25,4 +24,25 @@ add_executable(ListIterator List/ListIterator.cpp)
 add_executable(ListInsert List/ListInsert.cpp)
 add_executable(ListEraseRemove List/ListEraseRemove.cpp)
 add_executable(ListSpecialModifyingOperations List/ListSpecialModifyingOperations.cpp)
-add_executable(Bindx List/Bindx.cpp)
+
+# Map
+add_executable(MapConstructor Map/MapConstructor.cpp)
+add_executable(MapInsert Map/MapInsert.cpp)
+add_executable(MapBound Map/MapBound.cpp)
+add_executable(MapEqualRange Map/MapEqualRange.cpp)
+add_executable(SetIntroduce Map/SetIntroduce.cpp)
+
+# Other
+add_executable(DequeStack Other/DequeStack.cpp)
+add_executable(Stack Other/Stack.cpp)
+add_executable(Queue Other/Queue.cpp)
+add_executable(PriorityQueue Other/PriorityQueue.cpp)
+
+# Iterator
+add_executable(AuxiliaryIterator Iterator/AuxiliaryIterator.cpp)
+add_executable(OstreamIterator Iterator/OstreamIterator.cpp)
+
+# Functor
+add_executable(Bindx Functor/Bindx.cpp)
+add_executable(BindMemFunction1 Functor/BindMemFunction1.cpp)
+add_executable(BindMemFunction2 Functor/BindMemFunction2.cpp)
