@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is a XML comment-->
+<bookstore>
+    <book category="COOKING">
+        <title lang="en">Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+        <year>Everyday Italian</year>
+        <price>Everyday Italian</price>
+    </book>
+</bookstore>
