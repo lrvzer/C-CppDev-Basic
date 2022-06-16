@@ -46,3 +46,25 @@ add_executable(OstreamIterator Iterator/OstreamIterator.cpp)
 add_executable(Bindx Functor/Bindx.cpp)
 add_executable(BindMemFunction1 Functor/BindMemFunction1.cpp)
 add_executable(BindMemFunction2 Functor/BindMemFunction2.cpp)
+
+# Algorithm
+# 排序
+add_executable(Sort Algorithm/Sort.cpp)
+add_executable(Partition Algorithm/Partition.cpp)
+add_executable(Shuffle Algorithm/Shuffle.cpp)
+# 查找
+add_executable(Find Algorithm/Find.cpp)
+add_executable(Search Algorithm/Search.cpp)
+add_executable(Search_n Algorithm/Search_n.cpp)
+# 删除和替换
+add_executable(Remove Algorithm/Remove.cpp)
+add_executable(Unique Algorithm/Unique.cpp)
+# 排列组合
+add_executable(Permutation Algorithm/Permutation.cpp)
+# 集合
+add_executable(SetUnion Algorithm/SetUnion.cpp)
+add_executable(SetDiff Algorithm/SetDiff.cpp)
+add_executable(SetIntersection Algorithm/SetIntersection.cpp)
+
+# Application
+add_executable(VectorApplication Application/VectorApplication.cpp)

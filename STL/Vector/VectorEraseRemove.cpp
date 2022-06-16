@@ -9,7 +9,7 @@ int main() {
     vector<int>::iterator itr;
 
     cout << vi.size() << endl;
-    vi.erase(remove(vi.begin(), vi.end(), 5));
+    vi.erase(remove(vi.begin(), vi.end(), 5), vi.end());
     cout << vi.size() << endl;
     for (auto &i: vi) {
         cout << i << " ";
