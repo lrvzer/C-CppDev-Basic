@@ -8,4 +8,7 @@ add_executable(WriteToXMLFile XML/tinyxml2.h XML/tinyxml2.cpp XML/WriteToXMLFile
 add_executable(ReadFromXMLFile XML/tinyxml2.h XML/tinyxml2.cpp XML/ReadFromXMLFile.cpp)
 
 # JSON
-add_executable(JSON JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncpp.cpp JSON/main.cpp)
+add_executable(JSONObject JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncpp.cpp JSON/JSONObject.cpp)
+add_executable(JSONArray JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncpp.cpp JSON/JSONArray.cpp)
+add_executable(WriteToJSONFile JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncpp.cpp JSON/WriteToJSONFile.cpp)
+add_executable(ReadFromJSONFile JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncpp.cpp JSON/ReadFromJSONFile.cpp)
