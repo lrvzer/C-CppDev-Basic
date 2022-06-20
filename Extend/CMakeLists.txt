@@ -12,3 +12,5 @@ add_executable(JSONObject JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncp
 add_executable(JSONArray JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncpp.cpp JSON/JSONArray.cpp)
 add_executable(WriteToJSONFile JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncpp.cpp JSON/WriteToJSONFile.cpp)
 add_executable(ReadFromJSONFile JSON/json/json-forwards.h JSON/json/json.h JSON/jsoncpp.cpp JSON/ReadFromJSONFile.cpp)
+
+# MySQL
