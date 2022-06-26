@@ -1,0 +1,17 @@
+# 变量
+objs = print.o main.o
+target = main
+
+$(target):$(objs)
+	gcc $(objs) -o $(target)
+
+print.o : print.c
+	gcc -c print.c
+
+main.o : main.c
+	gcc -c main.c
+
+.PHONY : clean
+clean :
+	-rm -rf $(objs) $(target)
+	@echo "clean success"
