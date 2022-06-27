@@ -1,15 +1,7 @@
 #include <stdio.h>
 
-int main() {
-    int a = 2, b = 3;
-    a *= b + 4; // a = a * (b + 4)
-    printf("a = %d", a);
-    return 0;
-}
-
-
 /*运算符：优先级、结合性、分目*/
-int main0() {
+int main() {
     int a, b, c, d, e;
     a = b = c = d = e = 5;
     printf("a = %d, b = %d, c = %d, d = %d, e = %d\n", a, b, c, d, e);
