@@ -8,6 +8,15 @@ set(MODULES
         Chapter2_Operator
         Chapter3_FlowControl
         Chapter4_Array
+        Chapter5_Pointer
+        Chapter6_Function
+        Chapter7_VariableScope
+        Chapter8_String
+        Chapter9_Memory
+        Chapter10_Struct_Union_Enum
+        Chapter11_List
+        Chapter12_File
+        Chapter13_BitOperation
         )
 
 foreach (module ${MODULES})
