@@ -20,5 +20,5 @@ set(MAIN_FILES
 
 foreach (file ${MAIN_FILES})
     get_filename_component(filename ${file} NAME_WE)
-    add_executable(${file} ${MAIN_FILES})
+    add_executable(${filename} ${file})
 endforeach ()
