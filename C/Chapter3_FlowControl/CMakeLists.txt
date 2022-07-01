@@ -4,15 +4,15 @@ project(C)
 set(CMAKE_C_STANDARD 99)
 
 set(MAIN_FILES
-        if_else.c
-        switch.c
-        for.c
-        while.c
-        do_while.c
-        break.c
-        continue.c
-        goto.c
-        return.c
+        FlowControl_1_IfElse.c
+        FlowControl_2_Switch.c
+        FlowControl_3_For.c
+        FlowControl_4_While.c
+        FlowControl_5_DoWhile.c
+        FlowControl_6_Break.c
+        FlowControl_7_Continue.c
+        FlowControl_8_Goto.c
+        FlowControl_9_Return.c
         )
 
 foreach (file ${MAIN_FILES})
