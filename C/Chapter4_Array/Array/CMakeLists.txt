@@ -4,18 +4,18 @@ project(C)
 set(CMAKE_C_STANDARD 99)
 
 set(MAIN_FILES
-        introduce.c
-        initialize.c
-        address.c
-        ambiguity.c
-        variable_length_array.c
+        Array_1_Introduce.c
+        Array_2_Initialize.c
+        Array_3_Address.c
+        Array_4_Ambiguity.c
+        Array_5_VLA.c
 
-        app_ave_sum.c
-        app_max_min.c
-        app_select_sort.c
-        app_select_sort_pro.c
-        app_binary_search.c
-        app_merge.c
+        Array_6_AveSum.c
+        Array_7_MaxMin.c
+        Array_8_SelectSort.c
+        Array_9_SelectSortPro.c
+        Array_10_BinarySearch.c
+        Array_11_Merge.c
         )
 
 foreach (file ${MAIN_FILES})

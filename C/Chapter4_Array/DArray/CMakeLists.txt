@@ -4,14 +4,14 @@ project(C)
 set(CMAKE_C_STANDARD 99)
 
 set(MAIN_FILES
-        d_introduce.c
-        d_initialize.c
-        d_address.c
-        d_ambiguity.c
+        DArray_1_Introduce.c
+        DArray_2_Initialize.c
+        DArray_3_Address.c
+        DArray_4_Ambiguity.c
 
-        app_chess.c
-        app_print.c
-        app_reverse.c
+        DArray_5_Chess.c
+        DArray_6_Print.c
+        DArray_7_Reverse.c
         )
 
 foreach (file ${MAIN_FILES})
