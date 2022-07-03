@@ -9,19 +9,17 @@
 
 void displayArray(int arr[], int len);
 
-int main(int argc, char *argv[])
-{
-	int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-	printf("main sizeof(arr) = %lu\n", sizeof(arr));
-	displayArray(arr, sizeof(arr)/sizeof(*arr));
-	
-	return 0;
+int main(int argc, char *argv[]) {
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    printf("main sizeof(arr) = %lu\n", sizeof(arr));
+    displayArray(arr, sizeof(arr) / sizeof(*arr));
+
+    return 0;
 }
 
-void displayArray(int arr[], int len)
-{
-	printf("displayArray sizeof(arr) = %lu\n", sizeof(arr));
-	for (int i = 0; i < len; i++) {
-		printf("%d\t", arr[i]);
-	}
+void displayArray(int arr[], int len) {
+    printf("displayArray sizeof(arr) = %lu\n", sizeof(arr));
+    for (int i = 0; i < len; i++) {
+        printf("%d\t", arr[i]);
+    }
 }
