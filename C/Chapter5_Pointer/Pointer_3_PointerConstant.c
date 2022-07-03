@@ -11,14 +11,14 @@
 // 指针的本质，是一个有类型的地址，类型决定了，从这个地址开始的寻址能力
 
 int main(int argc, char *argv[]) {
-	
-	int data = 0x12345678;
-	
-	printf("%p\n", &data);
-	printf("%x\n", *(&data));
-	
-	printf("%x\n", *((int *)  0x30523290c));
-	printf("%x\n", *((char *) 0x30523290c));
-	printf("%x\n", *((short *)0x30523290c));
-	return 0;
+
+    int data = 0x12345678;
+
+    printf("%p\n", &data);
+    printf("%x\n", *(&data));
+
+    printf("%x\n", *((char *) &data));
+    printf("%x\n", *((short *) &data));
+    printf("%x\n", *((int *) &data));
+    return 0;
 }
