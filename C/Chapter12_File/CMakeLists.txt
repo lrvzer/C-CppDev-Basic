@@ -1,7 +1,7 @@
 set(MAIN_FILES
         File_1_fopenfclose.c
         File_2_fputcfgetc.c
-        File_3_Copy.c
+        File_3_copy.c
         File_4_fputsfgets.c
         File_5_feof.c
         File_6_freadfwrite.c

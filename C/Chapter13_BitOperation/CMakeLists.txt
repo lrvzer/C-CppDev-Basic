@@ -1,4 +1,14 @@
-cmake_minimum_required(VERSION 3.22)
-project(C)
+set(MAIN_FILES
+        Bit_1_DisplayBin.c
+        Bit_2_Mask.c
+        Bit_3_CircleMove.c
+        Bit_4_Swap.c
+        Bit_5_Encrypt.c
+        Bit_6_Encryt2.c
+        Bit_7_CircleMoveEncrypt.c
+        )
 
-set(CMAKE_C_STANDARD 99)
+foreach (file ${MAIN_FILES})
+    get_filename_component(name ${file} NAME_WE)
+    add_executable(${name} ${file})
+endforeach ()
