@@ -12,24 +12,29 @@
  * fgets(arr, 10, stdin);
  */
 
+#if 0
 int main(int argc, char *argv[]) {
-	
-	char arr[6] = "China";
+
+    char arr[6] = "China";
 //	scanf("%[^\n]s", arr);
 //	gets(arr);
-	fgets(arr, 10, stdin);
-	printf("%s", arr);
-	
-	return 0;
+    fgets(arr, 10, stdin);
+    printf("%s", arr);
+
+    return 0;
 }
 
+#endif
+
 // 输出
-int main1(int argc, char *argv[]) {
-	char arr[100] = "China";
-	printf("%s\n", arr);
-	puts(arr);
-	
-	puts(""); // 此句带有换行的性质
-	printf("--%lu--", sizeof("")); // \0
-	return 0;
+#if 1
+int main(int argc, char *argv[]) {
+    char arr[100] = "China";
+    printf("%s\n", arr);
+    puts(arr);
+
+    puts(""); // 此句带有换行的性质
+    printf("--%lu--", sizeof("")); // \0
+    return 0;
 }
+#endif

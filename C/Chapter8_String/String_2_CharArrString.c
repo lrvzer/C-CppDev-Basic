@@ -5,9 +5,9 @@
 // 等价关系   sizeof(字符数组) >= sizeof(字符串)
 // 不等价关系  sizeof(字符数组) < sizeof(字符串)
 int main(int argc, char *argv[]) {
-	char arr[] = "china"; // 自适应
-	
-	printf("arr = %s\n", arr);
-	printf("sizeof(arr) = %lu\n", sizeof(arr));
-	return 0;
+    char arr[] = "china"; // 自适应
+
+    printf("arr = %s\n", arr);
+    printf("sizeof(arr) = %lu\n", sizeof(arr));
+    return 0;
 }

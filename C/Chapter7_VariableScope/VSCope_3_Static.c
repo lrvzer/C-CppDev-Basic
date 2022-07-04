@@ -11,19 +11,18 @@
 int mm;
 
 void func() {
-	int a = 1;
-	printf("a = %d\t", a);
-	
-	static int b = 1;
-	printf("b = %d\n", b++);
-	
-	printf("=============\n");
+    int a = 1;
+    printf("a = %d\t", a);
+
+    static int b = 1;
+    printf("b = %d\n", b++);
+
+    printf("=============\n");
 }
 
-
 int main(int argc, char *argv[]) {
-	for (int i = 0; i < 10; i++) {
-		func();
-	}
-	return 0;
+    for (int i = 0; i < 10; i++) {
+        func();
+    }
+    return 0;
 }
