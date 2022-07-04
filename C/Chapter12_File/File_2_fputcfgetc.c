@@ -10,27 +10,29 @@ do{\
 }\
 while(0)
 
-// 通过fopen打开一个文件，返回一个FILE *指针
-// 以后，我们所有对于文件的操作，即操作FILE * 指针pf
+#if 1
 int main() {
-    FILE * pf = fopen("xx.txt", "r+");
+    FILE *pf = fopen("data.txt", "r+");
     F_PRINT_ERR(pf);
-    
+
     char ch;
     while ((ch = fgetc(pf)) != EOF) {
         putchar(ch);
     }
-    
+
     fclose(pf);
     return 0;
 }
+#endif
 
-int main1() {
-    FILE * pf = fopen("xx.txt", "w+");
+#if 0
+int main() {
+    FILE *pf = fopen("data.txt", "w+");
     F_PRINT_ERR(pf);
-    for (char ch = 'a'; ch <= 'z'; ch++) {
+    for (char ch = 'A'; ch <= 'Z'; ch++) {
         putchar(fputc(ch, pf));
     }
     fclose(pf);
     return 0;
 }
+#endif

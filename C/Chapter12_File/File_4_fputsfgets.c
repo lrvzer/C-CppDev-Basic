@@ -17,27 +17,26 @@ while(0)
 在去读n-1个字符前，没有遇到'\n'，遇到EOF，并在其后添加'\0'
 */
 int main() {
-    FILE * pf = fopen("xx.txt", "r");
+    FILE *pf = fopen("xx.txt", "r");
     F_PRINT_ERR(pf);
-    
+
     char buf[1024];
     while (fgets(buf, 1024, pf) != NULL) {
         printf("%s", buf);
     }
-        
+
     fclose(pf);
     return 0;
 }
 
 int main1() {
-    FILE * pf = fopen("xx.txt", "w");
+    FILE *pf = fopen("xx.txt", "w");
     F_PRINT_ERR(pf);
-    
-    
+
     fputs("aaaaaa\n", pf);
     fputs("bbbbbb\n", pf);
     fputs("cccccc\n", pf);
-    
+
     fclose(pf);
     return 0;
 }
