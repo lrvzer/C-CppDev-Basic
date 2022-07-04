@@ -23,17 +23,17 @@ typedef struct Emp {
 
 // 复数相加
 //Complex addComplex(Complex c1, Complex c2) {
-//	Complex ret;
-//	ret.real = c1.real + c2.real;
-//	ret.image = c1.image + c2.image;
-//	return ret;
+//    Complex ret;
+//    ret.real = c1.real + c2.real;
+//    ret.image = c1.image + c2.image;
+//    return ret;
 //}
 
-Complex addComplex(Complex* c1, Complex* c2) {
-	Complex ret;
-	ret.real = c1->real + c2->real;
-	ret.image = c1->image + c2->image;
-	return ret;
+Complex addComplex(Complex *c1, Complex *c2) {
+    Complex ret;
+    ret.real = c1->real + c2->real;
+    ret.image = c1->image + c2->image;
+    return ret;
 }
 
 int main(int argc, char *argv[]) {
