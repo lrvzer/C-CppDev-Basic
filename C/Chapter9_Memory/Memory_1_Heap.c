@@ -8,10 +8,9 @@
 // free
 
 int main(int argc, char *argv[]) {
-
-	char * p = (char *)malloc(1024*1024*10);
-	strcpy(p, "abcd");
-	printf("over!");
-	free(p);
-	return 0;
+    char *p = (char *) malloc(1024 * 1024 * 10);
+    strcpy(p, "abcd");
+    printf("over!");
+    free(p);
+    return 0;
 }
