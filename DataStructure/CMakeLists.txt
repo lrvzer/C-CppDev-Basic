@@ -4,6 +4,7 @@ project(DataStructure)
 set(CMAKE_CXX_STANDARD 11)
 
 set(MODULES
+        Chapter1_Introduce
         Chapter7_Sort
         Chapter8_Algorithm
         )
