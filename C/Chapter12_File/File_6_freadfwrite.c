@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#if 1
 int main(int argc, char *argv[]) {
 
     FILE *pf = fopen("mm.txt", "w+");
@@ -18,14 +19,14 @@ int main(int argc, char *argv[]) {
     fclose(pf);
     return 0;
 }
+#endif
 
-int main1(int argc, char *argv[]) {
+#if 0
+int main(int argc, char *argv[]) {
 
     char buf[1024] = "abc\0defg";
     FILE *pfa = fopen("xxx.txt", "w+");
-
     fputs(buf, pfa);
-
     rewind(pfa);
 
     char readBuf[1024];
@@ -34,18 +35,14 @@ int main1(int argc, char *argv[]) {
     fclose(pfa);
 
     FILE *pfb = fopen("yyy.txt", "wb+");
-
     fwrite((void *) buf, 1, 8, pfb);
-
     rewind(pfb);
-
     fread((void *) readBuf, 1, 8, pfb);
-
     for (int i = 0; i < 8; i++) {
         printf("%x-->%c\n", readBuf[i], readBuf[i]);
     }
-
     fclose(pfb);
 
     return 0;
 }
+#endif

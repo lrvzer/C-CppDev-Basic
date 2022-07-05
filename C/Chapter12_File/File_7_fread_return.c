@@ -11,9 +11,7 @@ int main(int argc, char *argv[]) {
     if (NULL == pf) {
         exit(-1);
     }
-
     fwrite((void *) buf, 1, 8, pf);
-
     rewind(pf);  /* 重置指针位置 */
 
     int n; /* 读到完整的块 */

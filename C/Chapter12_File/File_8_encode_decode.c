@@ -5,10 +5,6 @@
 // ./sh -c src dest
 // ./sh -d src dest
 
-// -c /Users/Lrwei/Pictures/WallPapers/wp.jpg /Users/Lrwei/Pictures/WallPapers/wp_encode.jpg
-// -d /Users/Lrwei/Pictures/WallPapers/wp_encode.jpg /Users/Lrwei/Pictures/WallPapers/wp_decode.jpg
-
-
 void encode(int *buf, int n) {
     for (int i = 0; i < n; i++) {
         buf[i]++;

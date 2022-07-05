@@ -10,6 +10,7 @@ typedef struct student {
     float chinese;
 } Stu;
 
+#if 1
 int main(int argc, char *argv[]) {
     Stu s;
     FILE *pfw = fopen("stu.data", "r+");
@@ -22,8 +23,10 @@ int main(int argc, char *argv[]) {
     fclose(pfw);
     return 0;
 }
+#endif
 
-int main1(int argc, char *argv[]) {
+#if 0
+int main(int argc, char *argv[]) {
 
     Stu s[5] =
         {
@@ -46,3 +49,4 @@ int main1(int argc, char *argv[]) {
 
     return 0;
 }
+#endif
