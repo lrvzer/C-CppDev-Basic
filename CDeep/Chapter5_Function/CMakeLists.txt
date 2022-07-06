@@ -1,6 +1,6 @@
 set(MAIN_FILES
         Func_1_FunctionPointer.c
-        Func_2_FuncpArray.c
+        Func_2_FuncPArray.c
         Func_3_Callback.c
         Func_4_Qsort.c
         Func_5_QsortString.c

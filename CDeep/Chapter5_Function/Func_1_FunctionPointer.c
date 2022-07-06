@@ -6,22 +6,22 @@
 // 返回   *    入参
 
 void print() {
-	printf("abc\n");
-	return;
+    printf("abc\n");
+    return;
 }
 
 int main(int argc, char *argv[]) {
-	print();
-	printf("%p\n", print);
-	
-	void (*p) (void) = print;
-	p();
-	
+    print();
+    printf("%p\n", print);
+
+    void (*p)(void) = print;
+    p();
+
 //	void (*po) (void) = &print;
 //	(*po)();
-	
-	typedef void (*PF) (void);
-	PF pf = print;
-	pf();
-	return 0;
+
+    typedef void (*PF)(void);
+    PF pf = print;
+    pf();
+    return 0;
 }
