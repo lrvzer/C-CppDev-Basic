@@ -6,7 +6,7 @@ using namespace tinyxml2;
 
 int main() {
     XMLDocument *doc = new XMLDocument;
-    doc->LoadFile("./tinyxml2-usage.xml");
+    doc->LoadFile("./tinyxml2-gen.xml");
 
     XMLElement *pEBookstore = doc->FirstChildElement();
     cout << pEBookstore->Name() << endl;
