@@ -1,18 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void ** alloc2DSpace(int unitSize, int row, int line)
-{
-	// 产生指针数组
-	void ** p = malloc(sizeof(void*) * row);
-	for (int i = 0; i < row; i++) {
-		p[i] = malloc(unitSize * line);
-	}
+// 堆上二维空间
+// 一级指针作为返回值返回
+void * alloc2DSpace(int unitSize, int row, int line) {
+	void * p = malloc(unitSize * row * line);
 	return p;
 }
 
 int main(int argc, char *argv[]) {
-	int **p = (int **)alloc2DSpace(sizeof(int), 3, 5);
+	int (*p)[5] = alloc2DSpace(sizeof(int), 3, 5);
 	
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 5; j++) {
@@ -22,9 +19,10 @@ int main(int argc, char *argv[]) {
 	
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 5; j++) {
-			printf("%d\t", *(*(p+i)+j));
+			printf("%d\t", p[i][j]);
 		}
 		putchar(10);
 	}
+	free(p);
 	return 0;
 }

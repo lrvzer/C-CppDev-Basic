@@ -9,7 +9,7 @@
 // 想要用指针访问指针数组
 
 int main(int argc, char *argv[]) {
-    char *pa[] = {"Google", "Oracle", "Facebool", "Apple", "NZ"};
+    char *pa[] = {"Google", "Oracle", "Facebook", "Apple", "NZ"};
 
 //	for (int i = 0; i < sizeof(pa) / sizeof(char*); i++) {
 //		printf("%s\n", pa[i]);

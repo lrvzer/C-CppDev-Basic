@@ -29,11 +29,14 @@ int main(int argc, char *argv[]) {
     printf("p  = %p p+1  = %p\n", p, p+1);
     printf("pp = %p pp+1 = %p\n", pp, pp+1);
 #endif
-    struct Staff *p;
+
+#if 1
+    struct Staff *p = 0;
     struct Staff **pp = &p;
     struct Staff ***ppp = &pp;
     printf("p   = %p p+1   = %p\n", p, p + 1);
     printf("pp  = %p pp+1  = %p\n", pp, pp + 1);
     printf("ppp = %p ppp+1 = %p\n", ppp, ppp + 1);
+#endif
     return 0;
 }
