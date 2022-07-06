@@ -11,7 +11,7 @@ typedef struct node {
 int readConfig(LoginNode **head, const char *path);
 int login(LoginNode *head);
 void trimStrSpace(char *str);
-void destoryConfig(LoginNode **head);
+void destroyConfig(LoginNode **head);
 void traverConfig(LoginNode *head);
 
 int main(int argc, char *argv[]) {
@@ -28,12 +28,12 @@ int main(int argc, char *argv[]) {
     else
         printf("Failure\n");
 
-    destoryConfig(&head);
+    destroyConfig(&head);
     head = NULL;
     return 0;
 }
 
-void destoryConfig(LoginNode **head) {
+void destroyConfig(LoginNode **head) {
     LoginNode *p;
     while (*head) {
         p = (*head);
