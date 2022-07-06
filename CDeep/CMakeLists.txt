@@ -13,7 +13,8 @@ set(MODULES
         Chapter7_Search
         Chapter8_List
         Chapter9_String
-        Chapter10_Conclusion
+        Chapter10_Memory
+        Chapter12_Conclusion
         )
 
 foreach (module ${MODULES})
