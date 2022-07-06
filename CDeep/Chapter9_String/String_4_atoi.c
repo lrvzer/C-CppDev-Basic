@@ -5,9 +5,9 @@
 int main(void) {
 	int data = 1234;
 	char buf[1024];
-	
-	itoa(data, buf, 10);
-	printf("%s\n", buf);
+	// 用sprintf替代
+//	itoa(data, buf, 10);
+//	printf("%s\n", buf);
 	
 	return 0;
 }

@@ -1,6 +1,6 @@
 set(MAIN_FILES
         String_1_RawString.c
-        String_3_Printf.c
+        String_3_sprintf.c
         String_4_atoi.c
         String_5_strchr.c
         String_6_strstr.c

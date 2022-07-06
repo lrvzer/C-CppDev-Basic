@@ -5,7 +5,7 @@ int main(void) {
     char bf1[10];
     char bf2[10];
     for (int i = 0; i < 10; i++) {
-        bf1[i] = 'a';
+        bf1[i] = 'a' + i;
     }
     strncpy(bf2, bf1, 9);
     bf2[9] = '\0';

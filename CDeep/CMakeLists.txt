@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 project(CDeep)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
 
 set(MODULES
         Chapter1_DataType
