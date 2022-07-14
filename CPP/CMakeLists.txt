@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(MODULES
         Chapter1_ExtensionC
         Chapter2_Class
+        Chapter2_ClassExtern
         Chapter3_Friend
         Chapter4_OperatorOverload
         Chapter5_Inheritance

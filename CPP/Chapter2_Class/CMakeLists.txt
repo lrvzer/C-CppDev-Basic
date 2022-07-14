@@ -8,6 +8,7 @@ set(MAIN_FILES
 
         Class_8_ReturnValue.cpp
         Class_9_ObjectArray.cpp
+        Class_10_MemberStorage.cpp
         )
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-elide-constructors")
 
