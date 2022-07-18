@@ -44,6 +44,7 @@ bool CCSprite::init() {
     return true;
 }
 
+// 挂载到链表上
 void CCSprite::autoRelease() {
 //    if (head == nullptr) {
 //        this->next = nullptr;
