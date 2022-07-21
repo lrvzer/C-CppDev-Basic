@@ -44,6 +44,7 @@ int main() {
 //    Shape & rs = c;
 //    rs.draw();
 
+    cout << "=========" << endl;
     Shape *ps = &c;
     ps->draw();
 
