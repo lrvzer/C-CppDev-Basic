@@ -2,8 +2,15 @@
 
 using namespace std;
 
-#if 1
-int main() {
-
+int add(int a, int b) {
+    return a + b;
 }
-#endif
+
+double add(double a, double b) {
+    return a + b;
+}
+int main() {
+    cout << add(10, 11) << endl;
+    cout << add(10.1, 10.2) << endl;
+    return 0;
+}
