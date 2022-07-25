@@ -6,6 +6,7 @@ set(MAIN_FILES
         Inherit_5_OperatorAssignment.cpp
         Inherit_6_FriendFunction.cpp
         Inherit_7_App.cpp
+        Inherit_8_Virtual.cpp
         )
 
 foreach (file ${MAIN_FILES})
