@@ -8,7 +8,6 @@ set(MAIN_FILES
         VectorIterator.cpp
         VectorInsert.cpp
         VectorEraseRemove.cpp
-        VectorPrintElem.cpp
         VectorMemoryManage1.cpp
         VectorMemoryManage2.cpp
         VectorMemoryManage3.cpp
