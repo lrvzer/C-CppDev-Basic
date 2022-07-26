@@ -15,7 +15,7 @@ int main() {
     // Season s = Season::Winter;
     // Xx x = Xx::Autumn;
     cout << sizeof(Season::Spring) << endl;
-    cout << (int)Season::Autumn << endl;
+    cout << (int) Season::Autumn << endl;
 
     return 0;
 }
