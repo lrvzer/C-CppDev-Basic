@@ -17,6 +17,7 @@ set(MAIN_FILES
         MoreConcise_16_lambda.cpp
         MoreConcise_17_lambda_foreach.cpp
         MoreConcise_18_functor_lambda.cpp
+        MoreConcise_19_enum.cpp
         )
 
 foreach (file ${MAIN_FILES})
