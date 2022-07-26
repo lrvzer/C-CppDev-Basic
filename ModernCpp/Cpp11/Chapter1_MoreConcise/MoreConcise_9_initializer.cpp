@@ -8,7 +8,7 @@ class Arr {
     public:
         Arr() = default;
         Arr(const initializer_list<T> &il) {
-            for  (auto &i : il)
+            for (auto &i: il)
                 vt.push_back(i);
         }
     protected:

@@ -13,7 +13,6 @@ int main() {
     decltype(i) di;
     cout << sizeof(i) << "   " << sizeof(di) << endl;
 
-
     decltype("China") p = "aaaaa";
     cout << sizeof(p) << endl;
 
@@ -23,7 +22,6 @@ int main() {
     char * pp = "China";
     decltype(pp) dp;
     cout << sizeof(dp) << endl;
-
 
     PF pf = func;
     decltype(pf) f = func;

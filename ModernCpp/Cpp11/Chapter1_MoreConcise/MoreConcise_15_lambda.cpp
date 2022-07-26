@@ -5,11 +5,11 @@ using namespace std;
 // [](){}
 // []()->{}
 int main() {
-    auto f = [](int a = 10, int b = 20) {return a + b;};
+    auto f = [](int a = 10, int b = 20) { return a + b; };
     cout << f(1, 2) << endl;
-    cout << [](int a, int b) {return a + b;}(5, 6) << endl;
+    cout << [](int a, int b) { return a + b; }(5, 6) << endl;
 
-    auto f2 = []()->int{return 1+2;};
+    auto f2 = []() -> int { return 1 + 2; };
     cout << f2() << endl;
     return 0;
 }

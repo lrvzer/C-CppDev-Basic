@@ -2,33 +2,32 @@
 
 using namespace std;
 
-
 int main() {
 
     float hignrate = 0.3;
     float hignbase = 30000;
 
-    auto high = [hignrate, hignbase](double money){
+    auto high = [hignrate, hignbase](double money) {
         return (money - hignbase) * hignrate;
     };
 
     float middlerate = 0.2;
     float middlebase = 15000;
-    auto midlle = [middlerate, middlebase](double money){
+    auto midlle = [middlerate, middlebase](double money) {
         return (money - middlebase) * middlerate;
     };
 
     float lowrate = 0.2;
     float lowbase = 15000;
-    auto low = [lowrate, lowbase](double money){
+    auto low = [lowrate, lowbase](double money) {
         return (money - lowbase) * lowrate;
-    }; 
+    };
 
     cout << "请输入你的收入：";
     double salary;
     cin >> salary;
 
-     if (salary > 30000)
+    if (salary > 30000)
         cout << high(salary) << endl;
     else if (salary > 15000)
         cout << midlle(salary) << endl;

@@ -9,7 +9,7 @@ int main() {
 
     typedef decltype(map<int, string>::value_type()) mapair;
     mis.insert(mapair(2, "American"));
-    for (auto & item:mis) {
+    for (auto &item: mis) {
         cout << item.first << ":" << item.second << endl;
     }
 

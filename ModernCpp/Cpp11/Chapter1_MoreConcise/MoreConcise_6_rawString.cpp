@@ -2,7 +2,6 @@
 
 using namespace std;
 
-// #define path "/Users/Lrwei/Desktop/C++11"
 #define path "Users\Lrwei\Desktop\C++11"
 #define path1 "Users\\Lrwei\\Desktop\\C++11"
 #define path2 R"(Users\Lrwei\Desktop\C++11)"

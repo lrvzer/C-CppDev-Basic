@@ -2,9 +2,11 @@
 
 using namespace std;
 
+// 显式禁用某个函数，在函数声明后上加“=delete;”
+
 class Singleton {
     public:
-        static Singleton * getInstance() {
+        static Singleton *getInstance() {
             if (nullptr == _ins) {
                 _ins = new Singleton;
             }
@@ -17,18 +19,18 @@ class Singleton {
         //     _ins = nullptr;
         // }
 
-        Singleton() = default;
         ~Singleton() = delete;
-        Singleton(const Singleton &anoter) = delete;
+        Singleton(const Singleton &another) = delete;
 
     private:
-        static Singleton * _ins;
+        Singleton() = default;
+        static Singleton *_ins;
 };
 
-Singleton * Singleton::_ins = nullptr;
+Singleton *Singleton::_ins = nullptr;
 
 int main() {
-    Singleton * p = Singleton::getInstance();
+    Singleton *p = Singleton::getInstance();
     // delete p; // error
     return 0;
 }

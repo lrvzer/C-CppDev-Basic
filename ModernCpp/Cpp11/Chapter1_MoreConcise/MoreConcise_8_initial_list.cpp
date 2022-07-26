@@ -24,8 +24,8 @@ int main() {
     // }
 
     map<int, string> mis = {
-        {1, "China"}, 
-        {2, "America"}, 
+        {1, "China"},
+        {2, "America"},
         {3, "Canada"}
     };
 
@@ -40,8 +40,9 @@ int main() {
     // mis.insert(map<int, string>::value_type(1, "China"));
     // mis.insert(map<int, string>::value_type(2, "America"));
     // mis.insert(map<int, string>::value_type(3, "Canada"));
+    mis.insert(pair<int, string>(4, "fourth"));
 
-    for (auto & i : mis) {
+    for (auto &i: mis) {
         cout << i.first << ": " << i.second << endl;
     }
 
