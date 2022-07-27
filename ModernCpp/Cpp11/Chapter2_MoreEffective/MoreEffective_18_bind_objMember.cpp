@@ -1,25 +1,22 @@
 #include <iostream>
+#include <functional>
 
 using namespace std;
 
-struct Pair
-{
+struct Pair {
     int data;
     double source;
 };
 
-class MyPair
-{
-public:
-    // void func()
-    void func(int x, int y)
-    {
-        cout << "class MyPair void func()" << endl;
-    }
+class MyPair {
+    public:
+        // void func()
+        void func(int x, int y) {
+            cout << "class MyPair void func()" << endl;
+        }
 };
 
-int main()
-{
+int main() {
     Pair p = {100, 20};
 
     auto obj = bind(&Pair::data, p);

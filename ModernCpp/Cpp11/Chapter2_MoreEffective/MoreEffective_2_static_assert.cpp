@@ -10,9 +10,9 @@ int my_bit_copy(T &t, U &u) {
 }
 
 int main() {
-    // int a;
-    // float b;
-    // my_bit_copy(a, b);
+    int a;
+    float b;
+    my_bit_copy(a, b);
 
     // char c;
     // my_bit_copy(a, c);
