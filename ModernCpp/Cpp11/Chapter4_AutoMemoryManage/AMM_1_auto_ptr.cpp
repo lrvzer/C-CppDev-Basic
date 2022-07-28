@@ -3,17 +3,17 @@ using namespace std;
 
 class A {
     public:
-    A() {
-        cout << "A()" << endl;
-    }
+        A() {
+            cout << "A()" << endl;
+        }
 
-    ~A() {
-        cout << "~A()" << endl;
-    }
+        ~A() {
+            cout << "~A()" << endl;
+        }
 
-    void dis() {
-        cout << "dis()" << endl;
-    }
+        void dis() {
+            cout << "dis()" << endl;
+        }
 };
 
 void func() {
