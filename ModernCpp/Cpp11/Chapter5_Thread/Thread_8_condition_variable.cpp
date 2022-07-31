@@ -7,10 +7,9 @@ bool ready = false;
 mutex mtx;
 condition_variable cv;
 
-void printId(int id)
-{
+void printId(int id) {
     unique_lock<mutex> lck(mtx);
-    while(!ready) {
+    while (!ready) {
         cv.wait(lck);
     }
     cout << "id = " << id << endl;
@@ -22,21 +21,18 @@ void go() {
     cv.notify_all();
 }
 
-int main()
-{
+int main() {
     thread ths[10];
 
-    for (int i = 0; i < 10; i++)
-    {
+    for (int i = 0; i < 10; i++) {
         ths[i] = thread(printId, i);
     }
 
     this_thread::sleep_for(chrono::seconds(5));
     go();
 
-    for (auto &th : ths)
-    {
+    for (auto &th: ths) {
         th.join();
     }
-    
+
 }

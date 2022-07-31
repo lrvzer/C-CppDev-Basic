@@ -7,9 +7,8 @@ void func() {
     this_thread::sleep_for(chrono::seconds(10));
 }
 
-
 void foo() {
-    this_thread::sleep_for(chrono::seconds(2));
+    this_thread::sleep_for(chrono::seconds(5));
 }
 
 int main() {
