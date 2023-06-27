@@ -53,12 +53,15 @@ int main(int argc, char *argv[]) {
     pu->score = 300;
     printf("score = %d\n", pu->score);
 
+    free(p);
+
     return 0;
 }
 #endif
 
 #if 0
 int main(int argc, char *argv[]) {
+    // 1111 1111 1111 1111
     signed char ch1 = 0xff;
     printf("%d\n", ch1);
     unsigned char ch2 = 0xff;

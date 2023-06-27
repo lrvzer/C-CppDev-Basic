@@ -43,15 +43,14 @@ class A {
 
 ## const & class
 
-```c++
-/*
+```
 1.修饰类数据成员
       必须要初始化：一种类内初始化，一种初始化列表初始化；一经初始化，不可更改
       可被普通成员函数和常成员函数使用
 2.修饰类成员函数
       修饰位置：
         class A {
-        		void foo() {} //
+            void foo() {} // 
             void foo() const; //类内定义
             void func() const {
             }
@@ -65,7 +64,6 @@ class A {
 3.修饰类对象
       修饰类成员函数构成的重载函数时：
         非const对象，优先调用非const版本；const对象只能调用const版本
-*/
 ```
 
 

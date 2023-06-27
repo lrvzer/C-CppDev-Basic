@@ -1,22 +1,21 @@
 #include "MyString.h"
 
-MyString::MyString(const char *src) {
-    if (nullptr == src) {
+inline MyString::MyString(const char *src) {
+    if (nullptr == src) { // 未指定初值
         _str = new char[1];
-        _str[0] = '\0';
-//        *_str = '\0';
+        _str[0] = '\0'; // *_str = '\0';
     } else {
         _str = new char[my_strlen(src) + 1];
         my_strcpy(_str, src);
     }
 }
 
-MyString::MyString(const MyString &another) {
+inline MyString::MyString(const MyString &another) {
     _str = new char[my_strlen(another._str) + 1];
     my_strcpy(_str, another._str);
 }
 
-MyString &MyString::operator=(const MyString &another) {
+inline MyString &MyString::operator=(const MyString &another) {
     if (this != &another) {
         delete[] this->_str; //
         _str = new char[my_strlen(another._str) + 1];
@@ -84,7 +83,7 @@ const char *MyString::c_str() {
     return _str;
 }
 
-MyString::~MyString() {
+inline MyString::~MyString() {
     delete[] _str;
 }
 
@@ -97,7 +96,7 @@ istream &operator>>(istream &is, MyString &in_str) {
     char ch;
     unsigned int i = 0;
     unsigned int reLen = 1;
-    unsigned int realLen =  MyString::my_strlen(in_str._str);
+    unsigned int realLen = MyString::my_strlen(in_str._str);
     while (1) {
         is >> noskipws;//noskipws => no skip whitespace(空白)
         //noskipws 不是不忽略输入前的空格, 而是 不忽略 任意地方的空格
