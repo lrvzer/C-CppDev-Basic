@@ -25,10 +25,12 @@ class my_auto_ptr {
     public:
         my_auto_ptr(T *t = 0) : _t(t) {}
 
+        // pointer
         T *operator->() {
             return _t;
         }
 
+        // reference
         T &operator*() {
             return *_t;
         }

@@ -2,7 +2,16 @@
 
 using namespace std;
 
-// 转化构造函数的本质也是构造函数
+/**
+ * 转换构造函数的本质也是构造函数
+ * class 源类{
+ *     operator 目标类() const { // const 建议加上
+ *         return 目标类(源类实参);
+ *     }
+ * }
+ * 特点：无参数，无返回
+ */
+
 
 class Point3D {
     public:

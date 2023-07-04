@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// 通俗版本
+// 泛化版本
 template<typename T>
 int compare(T a, T b) {
     if (a > b)
