@@ -21,7 +21,10 @@ using namespace std;
 
  3.修饰类对象
       修饰类成员函数构成的重载函数时：
-        非const对象，优先调用非const版本；const对象只能调用const版本
+        non-const object，优先调用non-const版本；const object只能调用const版本
+        当成员函数的const和non-const版本同时存在时，
+            const object只会（只能）调用const版本
+            non-const object只会（只能）调用non-const版本
 */
 
 class A {

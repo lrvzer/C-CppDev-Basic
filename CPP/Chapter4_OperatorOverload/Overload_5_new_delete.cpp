@@ -29,12 +29,14 @@ class A {
         }
 
         void *operator new[](size_t size) {
-            cout << size << endl;
+            cout << "new[] " << size << endl;
             void *p = malloc(size);
             return p;
         }
 
-        void operator delete[](void *p) {
+        void operator delete[](void *p, size_t size) {
+            // 8 * 10 + 16
+            cout << "delete[] " << size << endl;
             free(p);
         }
 
@@ -52,6 +54,7 @@ int main() {
 //    pa->dis();
 //    delete pa;
 
+    cout << sizeof(A) << endl;
     A *pa = new A[10];
     delete[] pa;
     return 0;
